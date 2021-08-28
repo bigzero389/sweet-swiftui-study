@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1D0EB626DA03C6009757B6 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D0EB526DA03C6009757B6 /* StackView.swift */; };
+		0D1D0EB826DA048B009757B6 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D0EB726DA048B009757B6 /* InitView.swift */; };
+		0D1D0EBA26DA0F25009757B6 /* StackCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D0EB926DA0F25009757B6 /* StackCompose.swift */; };
+		0D1D0EBC26DA15C6009757B6 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D0EBB26DA15C6009757B6 /* OverlayView.swift */; };
 		9CB2D0D749CFC2DAF9D69681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2D0AB15603EFFB6963624 /* Assets.xcassets */; };
 		9CB2D141713197BF6A2E6D0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2DEC689D0E039EB2A9ECA /* Preview Assets.xcassets */; };
 		9CB2DE51F152B982C5833CED /* HelloSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D8A57D8EF20BF91093B8 /* HelloSwiftApp.swift */; };
-		9CB2DF5FAE14C87E8A5C858C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D2B2A326E613AB97D8B7 /* ContentView.swift */; };
+		9CB2DF5FAE14C87E8A5C858C /* SimbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2D2B2A326E613AB97D8B7 /* SimbolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1D0EB526DA03C6009757B6 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StackView.swift; path = ../../../SwiftUI/HelloSwift/HelloSwift/StackView.swift; sourceTree = "<group>"; };
+		0D1D0EB726DA048B009757B6 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitView.swift; path = ../../../SwiftUI/HelloSwift/HelloSwift/InitView.swift; sourceTree = "<group>"; };
+		0D1D0EB926DA0F25009757B6 /* StackCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCompose.swift; sourceTree = "<group>"; };
+		0D1D0EBB26DA15C6009757B6 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = ../../../SwiftUI/HelloSwift/HelloSwift/OverlayView.swift; sourceTree = "<group>"; };
 		9CB2D0AB15603EFFB6963624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CB2D2B2A326E613AB97D8B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CB2D2B2A326E613AB97D8B7 /* SimbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimbolView.swift; sourceTree = "<group>"; };
 		9CB2D5C6514E928A5B6D226B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		9CB2D5D2E7311721B775447F /* HelloSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB2D8A57D8EF20BF91093B8 /* HelloSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloSwiftApp.swift; sourceTree = "<group>"; };
@@ -40,7 +48,11 @@
 				9CB2D0AB15603EFFB6963624 /* Assets.xcassets */,
 				9CB2D763AEE2F4B9B85501A8 /* Preview Content */,
 				9CB2D8A57D8EF20BF91093B8 /* HelloSwiftApp.swift */,
-				9CB2D2B2A326E613AB97D8B7 /* ContentView.swift */,
+				9CB2D2B2A326E613AB97D8B7 /* SimbolView.swift */,
+				0D1D0EB526DA03C6009757B6 /* StackView.swift */,
+				0D1D0EB926DA0F25009757B6 /* StackCompose.swift */,
+				0D1D0EB726DA048B009757B6 /* InitView.swift */,
+				0D1D0EBB26DA15C6009757B6 /* OverlayView.swift */,
 			);
 			path = HelloSwift;
 			sourceTree = "<group>";
@@ -94,11 +106,14 @@
 /* Begin PBXProject section */
 		9CB2DE44F7357DC42F197D9A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 9CB2D09844C41A36D707B151 /* Build configuration list for PBXProject "HelloSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 9CB2D71564E1E9F39B5F3B3B;
@@ -128,8 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1D0EB826DA048B009757B6 /* InitView.swift in Sources */,
 				9CB2DE51F152B982C5833CED /* HelloSwiftApp.swift in Sources */,
-				9CB2DF5FAE14C87E8A5C858C /* ContentView.swift in Sources */,
+				9CB2DF5FAE14C87E8A5C858C /* SimbolView.swift in Sources */,
+				0D1D0EBA26DA0F25009757B6 /* StackCompose.swift in Sources */,
+				0D1D0EB626DA03C6009757B6 /* StackView.swift in Sources */,
+				0D1D0EBC26DA15C6009757B6 /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +230,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -319,6 +337,7 @@
 				9CB2D7400CE0BD3213D9E9C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
