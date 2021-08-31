@@ -11,9 +11,10 @@
 		0DBFFBC026DE1DAE00D5EFF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBBF26DE1DAE00D5EFF8 /* Preview Assets.xcassets */; };
 		0DBFFBCC26DE1E4200D5EFF8 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBCB26DE1E4200D5EFF8 /* ProductData.json */; };
 		0DBFFBCE26DE1EAF00D5EFF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBCD26DE1EAF00D5EFF8 /* LaunchScreen.storyboard */; };
-		0DBFFBD526DE1F1E00D5EFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBD326DE1F1E00D5EFF8 /* AppDelegate.swift */; };
-		0DBFFBD626DE1F1E00D5EFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBD426DE1F1E00D5EFF8 /* SceneDelegate.swift */; };
 		0DBFFBD926DE1F3A00D5EFF8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBD826DE1F3A00D5EFF8 /* Home.swift */; };
+		0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBDA26DE345900D5EFF8 /* ProductRow.swift */; };
+		0DBFFBDD26DE34F600D5EFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBDC26DE34F600D5EFF8 /* AppDelegate.swift */; };
+		0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +24,10 @@
 		0DBFFBC126DE1DAE00D5EFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "FruitMart/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		0DBFFBCB26DE1E4200D5EFF8 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		0DBFFBCD26DE1EAF00D5EFF8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0DBFFBD326DE1F1E00D5EFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DBFFBD426DE1F1E00D5EFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0DBFFBD826DE1F3A00D5EFF8 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0DBFFBDA26DE345900D5EFF8 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		0DBFFBDC26DE34F600D5EFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FruitMart/Source/Application/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = FruitMart/Source/Application/SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,8 @@
 		0DBFFBCF26DE1ED200D5EFF8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				0DBFFBD326DE1F1E00D5EFF8 /* AppDelegate.swift */,
-				0DBFFBD426DE1F1E00D5EFF8 /* SceneDelegate.swift */,
+				0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */,
+				0DBFFBDC26DE34F600D5EFF8 /* AppDelegate.swift */,
 			);
 			name = Application;
 			path = "메ㅔㅣㅑㅊㅁ샤ㅐㅜ";
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0DBFFBD826DE1F3A00D5EFF8 /* Home.swift */,
+				0DBFFBDA26DE345900D5EFF8 /* ProductRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,9 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DBFFBD526DE1F1E00D5EFF8 /* AppDelegate.swift in Sources */,
 				0DBFFBD926DE1F3A00D5EFF8 /* Home.swift in Sources */,
-				0DBFFBD626DE1F1E00D5EFF8 /* SceneDelegate.swift in Sources */,
+				0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */,
+				0DBFFBDD26DE34F600D5EFF8 /* AppDelegate.swift in Sources */,
+				0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
