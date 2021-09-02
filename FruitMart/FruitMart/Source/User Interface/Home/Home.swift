@@ -10,10 +10,10 @@ import SwiftUI
 
 struct Home: View {
   var body: some View {
-    VStack {
-      ProductRow(product: productSamples[0])
-      ProductRow(product: productSamples[1])
-      ProductRow(product: productSamples[2])
+    VStack(alignment: .center, spacing: 0) {
+      ForEach((1...productSamples.count), id: \.self) {
+        ProductRow(product: productSamples[$0-1])
+      }
     }
   }
 }
