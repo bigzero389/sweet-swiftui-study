@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D90727126E3121C0051BE79 /* OnTapGestureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727026E3121C0051BE79 /* OnTapGestureTest.swift */; };
+		0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727326E319060051BE79 /* NavigationViewTest.swift */; };
+		0D90727726E335CA0051BE79 /* ListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727626E335CA0051BE79 /* ListTest.swift */; };
+		0D90727926E3403A0051BE79 /* GeometryReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727826E3403A0051BE79 /* GeometryReaderTest.swift */; };
 		0DBFFBBD26DE1DAE00D5EFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBBC26DE1DAE00D5EFF8 /* Assets.xcassets */; };
 		0DBFFBC026DE1DAE00D5EFF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBBF26DE1DAE00D5EFF8 /* Preview Assets.xcassets */; };
 		0DBFFBCC26DE1E4200D5EFF8 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBCB26DE1E4200D5EFF8 /* ProductData.json */; };
@@ -17,9 +21,15 @@
 		0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */; };
 		0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAFE1A26E09A490088CD56 /* ColorExtension.swift */; };
 		0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAFE1C26E09DCA0088CD56 /* Product.swift */; };
+		0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8919026E34AD6003AE276 /* FrameTest.swift */; };
+		0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4869726E306C20016DCA5 /* ButtonTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D90727026E3121C0051BE79 /* OnTapGestureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTapGestureTest.swift; sourceTree = "<group>"; };
+		0D90727326E319060051BE79 /* NavigationViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewTest.swift; sourceTree = "<group>"; };
+		0D90727626E335CA0051BE79 /* ListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTest.swift; sourceTree = "<group>"; };
+		0D90727826E3403A0051BE79 /* GeometryReaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderTest.swift; sourceTree = "<group>"; };
 		0DBFFBB526DE1DAD00D5EFF8 /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBFFBBC26DE1DAE00D5EFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DBFFBBF26DE1DAE00D5EFF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -32,6 +42,8 @@
 		0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = FruitMart/Source/Application/SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
 		0DCAFE1A26E09A490088CD56 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0DCAFE1C26E09DCA0088CD56 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0DD8919026E34AD6003AE276 /* FrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTest.swift; sourceTree = "<group>"; };
+		0DF4869726E306C20016DCA5 /* ButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D90727226E3130C0051BE79 /* TestSample */ = {
+			isa = PBXGroup;
+			children = (
+				0DF4869726E306C20016DCA5 /* ButtonTest.swift */,
+				0D90727026E3121C0051BE79 /* OnTapGestureTest.swift */,
+				0D90727326E319060051BE79 /* NavigationViewTest.swift */,
+				0D90727626E335CA0051BE79 /* ListTest.swift */,
+				0D90727826E3403A0051BE79 /* GeometryReaderTest.swift */,
+				0DD8919026E34AD6003AE276 /* FrameTest.swift */,
+			);
+			path = TestSample;
+			sourceTree = "<group>";
+		};
 		0DBFFBAC26DE1DAD00D5EFF8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,7 @@
 		0DBFFBC726DE1DBA00D5EFF8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0D90727226E3130C0051BE79 /* TestSample */,
 				0DBFFBCF26DE1ED200D5EFF8 /* Application */,
 				0DBFFBD026DE1EE100D5EFF8 /* User Interface */,
 				0DBFFBD226DE1EF100D5EFF8 /* Helper */,
@@ -231,11 +257,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DBFFBD926DE1F3A00D5EFF8 /* Home.swift in Sources */,
+				0D90727926E3403A0051BE79 /* GeometryReaderTest.swift in Sources */,
 				0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */,
+				0D90727126E3121C0051BE79 /* OnTapGestureTest.swift in Sources */,
+				0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */,
 				0DBFFBDD26DE34F600D5EFF8 /* AppDelegate.swift in Sources */,
+				0D90727726E335CA0051BE79 /* ListTest.swift in Sources */,
 				0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */,
 				0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */,
+				0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */,
 				0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */,
+				0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
