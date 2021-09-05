@@ -14,6 +14,13 @@
 		0DA133E126E45BF500FDBB9F /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133E026E45BF500FDBB9F /* BundleExtension.swift */; };
 		0DA133E326E45D6700FDBB9F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133E226E45D6700FDBB9F /* Store.swift */; };
 		0DA133E526E46AD400FDBB9F /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133E426E46AD400FDBB9F /* ProductDetailView.swift */; };
+		0DA133E726E4799000FDBB9F /* MyStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133E626E4799000FDBB9F /* MyStackTest.swift */; };
+		0DA133EA26E4843600FDBB9F /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133E926E4843600FDBB9F /* Preview.swift */; };
+		0DA133EC26E4933300FDBB9F /* IdentifiableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133EB26E4933300FDBB9F /* IdentifiableTest.swift */; };
+		0DA133EE26E4985000FDBB9F /* StateBindingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133ED26E4985000FDBB9F /* StateBindingTest.swift */; };
+		0DA133F026E49BD100FDBB9F /* AlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133EF26E49BD100FDBB9F /* AlertTest.swift */; };
+		0DA133F226E4A30000FDBB9F /* SheetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133F126E4A30000FDBB9F /* SheetTest.swift */; };
+		0DA133F426E4A54300FDBB9F /* PopoverTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA133F326E4A54300FDBB9F /* PopoverTest.swift */; };
 		0DBFFBBD26DE1DAE00D5EFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBBC26DE1DAE00D5EFF8 /* Assets.xcassets */; };
 		0DBFFBC026DE1DAE00D5EFF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBBF26DE1DAE00D5EFF8 /* Preview Assets.xcassets */; };
 		0DBFFBCC26DE1E4200D5EFF8 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DBFFBCB26DE1E4200D5EFF8 /* ProductData.json */; };
@@ -36,6 +43,13 @@
 		0DA133E026E45BF500FDBB9F /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		0DA133E226E45D6700FDBB9F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		0DA133E426E46AD400FDBB9F /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		0DA133E626E4799000FDBB9F /* MyStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackTest.swift; sourceTree = "<group>"; };
+		0DA133E926E4843600FDBB9F /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		0DA133EB26E4933300FDBB9F /* IdentifiableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableTest.swift; sourceTree = "<group>"; };
+		0DA133ED26E4985000FDBB9F /* StateBindingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBindingTest.swift; sourceTree = "<group>"; };
+		0DA133EF26E49BD100FDBB9F /* AlertTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTest.swift; sourceTree = "<group>"; };
+		0DA133F126E4A30000FDBB9F /* SheetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetTest.swift; sourceTree = "<group>"; };
+		0DA133F326E4A54300FDBB9F /* PopoverTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTest.swift; sourceTree = "<group>"; };
 		0DBFFBB526DE1DAD00D5EFF8 /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBFFBBC26DE1DAE00D5EFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DBFFBBF26DE1DAE00D5EFF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -72,8 +86,22 @@
 				0D90727626E335CA0051BE79 /* ListTest.swift */,
 				0D90727826E3403A0051BE79 /* GeometryReaderTest.swift */,
 				0DD8919026E34AD6003AE276 /* FrameTest.swift */,
+				0DA133E626E4799000FDBB9F /* MyStackTest.swift */,
+				0DA133EB26E4933300FDBB9F /* IdentifiableTest.swift */,
+				0DA133ED26E4985000FDBB9F /* StateBindingTest.swift */,
+				0DA133EF26E49BD100FDBB9F /* AlertTest.swift */,
+				0DA133F126E4A30000FDBB9F /* SheetTest.swift */,
+				0DA133F326E4A54300FDBB9F /* PopoverTest.swift */,
 			);
 			path = TestSample;
+			sourceTree = "<group>";
+		};
+		0DA133E826E4842400FDBB9F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0DA133E926E4843600FDBB9F /* Preview.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		0DBFFBAC26DE1DAD00D5EFF8 = {
@@ -170,6 +198,7 @@
 		0DBFFBD226DE1EF100D5EFF8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0DA133E826E4842400FDBB9F /* CustomView */,
 				0DCAFE1926E09A0E0088CD56 /* Extension */,
 			);
 			path = Helper;
@@ -268,16 +297,23 @@
 				0DBFFBD926DE1F3A00D5EFF8 /* Home.swift in Sources */,
 				0D90727926E3403A0051BE79 /* GeometryReaderTest.swift in Sources */,
 				0DA133E126E45BF500FDBB9F /* BundleExtension.swift in Sources */,
+				0DA133EC26E4933300FDBB9F /* IdentifiableTest.swift in Sources */,
 				0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */,
+				0DA133F426E4A54300FDBB9F /* PopoverTest.swift in Sources */,
 				0D90727126E3121C0051BE79 /* OnTapGestureTest.swift in Sources */,
 				0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */,
+				0DA133F226E4A30000FDBB9F /* SheetTest.swift in Sources */,
 				0DBFFBDD26DE34F600D5EFF8 /* AppDelegate.swift in Sources */,
+				0DA133EA26E4843600FDBB9F /* Preview.swift in Sources */,
 				0DA133E326E45D6700FDBB9F /* Store.swift in Sources */,
+				0DA133F026E49BD100FDBB9F /* AlertTest.swift in Sources */,
+				0DA133E726E4799000FDBB9F /* MyStackTest.swift in Sources */,
 				0D90727726E335CA0051BE79 /* ListTest.swift in Sources */,
 				0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */,
 				0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */,
 				0DA133E526E46AD400FDBB9F /* ProductDetailView.swift in Sources */,
 				0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */,
+				0DA133EE26E4985000FDBB9F /* StateBindingTest.swift in Sources */,
 				0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */,
 				0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */,
 			);
@@ -405,7 +441,6 @@
 		0DBFFBC526DE1DAE00D5EFF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/Preview Content\"";
@@ -427,7 +462,6 @@
 		0DBFFBC626DE1DAE00D5EFF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FruitMart/Preview Content\"";
