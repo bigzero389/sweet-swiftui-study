@@ -7,6 +7,9 @@
 import Foundation
 
 struct Product {
+  // var 로 선언했더니 JSON 복호화시 에러가 발생한다. 원인불명
+  let id: UUID = UUID() // identifiable 프로토콜 준수를 위한 id 프로퍼티 추가
+  
   let name: String
   let imageName: String
   let price: Int
@@ -22,3 +25,6 @@ let productSamples = [
   Product(name: "시원한 수박", imageName: "watermelon", price: 3500, description: "아이들이 너무나 좋아하는 시원하고 달콤한 하우스 수박이에요", isFavorite: true),
   Product(name: "베리베리 블루베리", imageName: "blueberry", price: 2300, description: "타임지 선정 10대 파워 푸드. 신이 내린 선물이라 불리는 블루베리에요"),
 ]
+
+extension Product: Decodable {}
+extension Product: Identifiable {}
