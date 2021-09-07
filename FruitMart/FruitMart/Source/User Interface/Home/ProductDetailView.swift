@@ -34,9 +34,9 @@ struct ProductDetailView: View {
         self.priceInfo
         self.placeOrderButton
       }.frame(height: $0.size.height + 10)
-      .padding(32)
+      .padding(15)
       .background(Color.white)  // 다크모드에서도 흰색배경을 사용하기 위해 white 지정
-      .cornerRadius(16)
+      .cornerRadius(30)
       .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0.0, y: -5)
     }
   }

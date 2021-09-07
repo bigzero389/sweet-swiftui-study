@@ -10,6 +10,8 @@ import SwiftUI
 struct QuantitySelector: View {
   @Binding var quantity: Int  // binding 프로퍼티 래퍼
   var range: ClosedRange<Int> = 1...20  // 수량선택범위
+  private let softFeedback = UIImpactFeedbackGenerator(style: .soft)
+  private let rigidFeedback = UIImpactFeedbackGenerator(style: .rigid)
   
   var body: some View {
     HStack {
@@ -36,7 +38,12 @@ struct QuantitySelector: View {
   private func changeQuantity(_ num: Int) {
     // ~= 연산자는 우변의 값이 좌변값에 포함되어 있는지를 판단한다.
     if range ~= quantity + num {
+      softFeedback.prepare()
+      softFeedback.impactOccurred(intensity: 0.8)
       quantity += num
+    } else {
+      rigidFeedback.prepare()
+      rigidFeedback.impactOccurred()
     }
   }
 }
