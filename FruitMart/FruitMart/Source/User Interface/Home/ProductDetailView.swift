@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProductDetailView: View {
   @State private var quantity: Int = 1
+  @State private var showingAlert: Bool = false
+  @EnvironmentObject private var store: Store
   let product: Product
   
   var body: some View {
@@ -16,6 +18,9 @@ struct ProductDetailView: View {
       productImage
       orderView
     }.edgesIgnoringSafeArea(.top)
+    .alert(isPresented: $showingAlert) {
+      confirmAlert
+    }
   }
   
   var productImage: some View {
@@ -81,7 +86,9 @@ struct ProductDetailView: View {
   }
   
   var placeOrderButton: some View {
-    Button(action: { }) {
+    Button(action: {
+      self.showingAlert = true
+    }) {
       Capsule()
         .fill(Color.peach)
         // 너비는 주어진 공간을 최대로 사용하고 높이는 최소, 최대치 지정
@@ -90,7 +97,24 @@ struct ProductDetailView: View {
         .padding()
     }
   }
+  
+  var confirmAlert: Alert {
+    Alert(
+      title: Text("주문확인"),
+      message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
+      primaryButton: .default(Text("확인"), action: {
+        // 주문 기능 구현
+        self.placeOrder()
+      }),
+      secondaryButton: .cancel(Text("취소"))
+    )
+  }
+  
+  func placeOrder() {
+    store.placeOrder(product: product, quantity: quantity)
+  }
 }
+
 
 struct ProductDetailView_Previews: PreviewProvider {
   static var previews: some View {

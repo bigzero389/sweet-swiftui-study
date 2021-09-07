@@ -34,6 +34,8 @@
 		0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8919026E34AD6003AE276 /* FrameTest.swift */; };
 		0DEFC9CF26E702E5000F73BE /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */; };
 		0DEFC9D126E75E9E000F73BE /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */; };
+		0DEFC9D326E766F3000F73BE /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D226E766F3000F73BE /* Order.swift */; };
+		0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D426E772FB000F73BE /* WrapperTest.swift */; };
 		0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4869726E306C20016DCA5 /* ButtonTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		0DD8919026E34AD6003AE276 /* FrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTest.swift; sourceTree = "<group>"; };
 		0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		0DEFC9D226E766F3000F73BE /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0DEFC9D426E772FB000F73BE /* WrapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperTest.swift; sourceTree = "<group>"; };
 		0DF4869726E306C20016DCA5 /* ButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +100,7 @@
 				0DA133EF26E49BD100FDBB9F /* AlertTest.swift */,
 				0DA133F126E4A30000FDBB9F /* SheetTest.swift */,
 				0DA133F326E4A54300FDBB9F /* PopoverTest.swift */,
+				0DEFC9D426E772FB000F73BE /* WrapperTest.swift */,
 			);
 			path = TestSample;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			children = (
 				0DCAFE1C26E09DCA0088CD56 /* Product.swift */,
 				0DA133E226E45D6700FDBB9F /* Store.swift */,
+				0DEFC9D226E766F3000F73BE /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */,
 				0DA133F226E4A30000FDBB9F /* SheetTest.swift in Sources */,
 				0DBFFBDD26DE34F600D5EFF8 /* AppDelegate.swift in Sources */,
+				0DEFC9D326E766F3000F73BE /* Order.swift in Sources */,
 				0DA133EA26E4843600FDBB9F /* Preview.swift in Sources */,
 				0DA133E326E45D6700FDBB9F /* Store.swift in Sources */,
 				0DA133F026E49BD100FDBB9F /* AlertTest.swift in Sources */,
@@ -324,6 +331,7 @@
 				0DA133EE26E4985000FDBB9F /* StateBindingTest.swift in Sources */,
 				0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */,
 				0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */,
+				0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
