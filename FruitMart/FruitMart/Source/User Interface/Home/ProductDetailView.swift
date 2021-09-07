@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+  @State private var quantity: Int = 1
   let product: Product
   
   var body: some View {
@@ -73,9 +74,11 @@ struct ProductDetailView: View {
   
   var priceInfo: some View {
     /*통화 기호는 작게, 가격은 크게 표시*/
-    HStack {
-      (Text("₩ ") + Text("\(product.price)").font(.title)).fontWeight(.medium)
+    let price = quantity * product.price
+    return HStack {
+      (Text("₩ ") + Text("\(price)").font(.title)).fontWeight(.medium)
       Spacer()
+      QuantitySelector(quantity: $quantity)
       // 수량 선택 버튼이 들어갈 위치 - 챕터 5에서 구현
     }.foregroundColor(.black)
   }
