@@ -48,10 +48,7 @@ struct ProductDetailView: View {
           .font(.largeTitle).fontWeight(.medium)
           .foregroundColor(.black)
         Spacer()
-        Image(systemName: "heart")  // 즐겨찾기
-          .imageScale(.large)
-          .foregroundColor(Color.peach)
-          .frame(width: 32, height: 32, alignment: .center)
+        FavoriteButton(product: product)
       }
       Text(splitText(product.description))
         .foregroundColor(.secondaryText)
