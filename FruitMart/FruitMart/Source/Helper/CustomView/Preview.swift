@@ -11,13 +11,14 @@ import SwiftUI
 struct Preview<V: View>: View {
   enum Device: String, CaseIterable {
     case iPhone8 = "iPhone 8"
+    case iPhoneX = "iPhone X"
     case iPhone11 = "iPhone 11"
     case iPhone11Pro = "iPhone 11 Pro"
     case iPhone11ProMax = "iPhone 11 Pro Max"
   }
 
   let source: V
-  var devices: [Device] = [.iPhone11,/*.iPhone11Pro, .iPhone11ProMax, */.iPhone8]
+  var devices: [Device] = [.iPhone11, .iPhone8, /*.iPhone11Pro, .iPhone11ProMax, .iPhone8*/]
   var displayDarkMode: Bool = true
 
   // MARK: Body

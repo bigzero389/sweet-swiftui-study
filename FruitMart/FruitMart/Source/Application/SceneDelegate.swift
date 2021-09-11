@@ -14,8 +14,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   
   
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    configureAppearance()
     
-    let rootView = Home().environmentObject(Store())
+    let rootView = Home()
+      .accentColor(Color.primary)
+      .environmentObject(Store())
     
     if let windowScene = scene as? UIWindowScene {
       let window = UIWindow(windowScene: windowScene)
@@ -23,5 +26,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       self.window = window
       window.makeKeyAndVisible()
     }
+  }
+  
+  private func configureAppearance() {
+    // large 디스플레이 모드에서 적용
+    UINavigationBar.appearance().largeTitleTextAttributes = [
+      .foregroundColor: UIColor(named: "peach")
+    ]
+    // inline 디스플레이 모드일 때 적용
+    UINavigationBar.appearance().titleTextAttributes = [
+      .foregroundColor: UIColor(named: "peach")
+    ]
+    
   }
 }

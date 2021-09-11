@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductDetailView: View {
   @State private var quantity: Int = 1
   @State private var showingAlert: Bool = false
+  @State private var showingPopup: Bool = false
   @EnvironmentObject private var store: Store
   let product: Product
   
@@ -17,17 +18,19 @@ struct ProductDetailView: View {
     VStack(spacing: 0) {
       productImage
       orderView
-    }.edgesIgnoringSafeArea(.top)
-    .alert(isPresented: $showingAlert) {
-      confirmAlert
     }
+    // 팝업 크기 지정 및 dimmed 스타일 적용
+//    .modifier(Popup(size: CGSize(width: 200, height: 200), style: .dimmed, message: Text("팝업")))
+    .edgesIgnoringSafeArea(.top)
+    .alert(isPresented: $showingAlert) { confirmAlert }
+    // blur 스타일 적용
+    .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
   }
   
   var productImage: some View {
     GeometryReader { _ in
-      Image(self.product.imageName)
-        .resizable()
-        .scaledToFill()
+//      Image(self.product.imageName).resizable().scaledToFill()
+      ResizedImage(self.product.imageName)
     }
   }
   
@@ -94,8 +97,9 @@ struct ProductDetailView: View {
         // 너비는 주어진 공간을 최대로 사용하고 높이는 최소, 최대치 지정
         .frame(maxWidth: .infinity, minHeight: 30, maxHeight: 55)
         .overlay(Text("주문하기").font(.system(size: 20)).fontWeight(.medium).foregroundColor(Color.white))
-        .padding()
+        .padding(30)
     }
+    .buttonStyle(ShrinkButtonStyle())
   }
   
   var confirmAlert: Alert {
@@ -112,6 +116,7 @@ struct ProductDetailView: View {
   
   func placeOrder() {
     store.placeOrder(product: product, quantity: quantity)
+    showingPopup = true
   }
 }
 
@@ -121,8 +126,10 @@ struct ProductDetailView_Previews: PreviewProvider {
     let source1 = ProductDetailView(product: productSamples[0])
     let source2 = ProductDetailView(product: productSamples[1])
     return Group {
-      Preview(source: source1)
-      Preview(source: source2, devices: [.iPhone11Pro], displayDarkMode: false)
+      Preview(source: source2)
+//      Preview(source: source2)
+//      Preview(source: source1, devices: [.iPhone11], displayDarkMode: false)
+//      Preview(source: source2, devices: [.iPhone11Pro], displayDarkMode: false)
     }
   }
 }

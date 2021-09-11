@@ -50,6 +50,7 @@ struct ButtonTest: View {
             .imageScale(.large)
             .font(.largeTitle)
         })
+        .overlay(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Overlay Content@*/Text("Placeholder")/*@END_MENU_TOKEN@*/)
       })
       
       VStack(alignment: .center, spacing: 10, content: {

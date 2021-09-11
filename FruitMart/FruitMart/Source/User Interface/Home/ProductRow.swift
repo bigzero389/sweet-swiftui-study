@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProductRow: View {
   let product: Product
+  @EnvironmentObject var store: Store
+  @Binding var quickOrder: Product?
   
   var body: some View {
     HStack {
@@ -29,9 +31,8 @@ struct ProductRow: View {
 
 private extension ProductRow {
   var productImage: some View {
-    Image(product.imageName)
-      .resizable()
-      .scaledToFit()
+//    Image(product.imageName).resizable().scaledToFit()
+    ResizedImage(product.imageName)
       .frame(width: 140)
       .clipped()
   }
@@ -58,10 +59,17 @@ private extension ProductRow {
       Text("₩ ").font(.footnote) + Text("\(product.price)").font(.headline)
       Spacer()
       FavoriteButton(product: product)
-      Image(systemName: "cart")
-        .foregroundColor(.peach)
+//      Image(systemName: "cart").foregroundColor(.peach)
+      Symbol("cart",scale: .large, color: .peach)
         .frame(width: 32, height: 32, alignment: .center)
+        .onTapGesture { self.orderProduct() }
+      
     }
+  }
+  
+  func orderProduct() {
+    quickOrder = product
+    store.placeOrder(product: product, quantity: 1)
   }
 }
 
@@ -70,9 +78,9 @@ struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
       Group {
         ForEach(productSamples) {
-          ProductRow(product: $0)
+          ProductRow(product: $0, quickOrder: .constant(nil))
         }
-        ProductRow(product: productSamples[0])
+        ProductRow(product: productSamples[0], quickOrder: .constant(nil))
           .preferredColorScheme(.dark)
       }.padding()
       .previewLayout(.sizeThatFits)

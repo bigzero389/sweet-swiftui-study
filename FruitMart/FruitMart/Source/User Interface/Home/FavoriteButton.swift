@@ -19,9 +19,8 @@ struct FavoriteButton: View {
     Button(action: {
       self.store.toggleFavorite(of: self.product)
     }) {
-      Image(systemName: product.isFavorite ? "heart.fill" : "heart")
-        .imageScale(.large)
-        .foregroundColor(.peach)
+//      Image(systemName: product.isFavorite ? "heart.fill" : "heart").imageScale(.large).foregroundColor(.peach)
+      Symbol(product.isFavorite ? "heart.fill" : "heart", scale: .large, color: .peach)
         .frame(width: 32, height: 32, alignment: .center)
         .onTapGesture {
           self.store.toggleFavorite(of: self.product)
