@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D13747F26EDB46D005AE2C3 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13747E26EDB46D005AE2C3 /* FavoriteProductScrollView.swift */; };
+		0D13748126EDD369005AE2C3 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D13748026EDD369005AE2C3 /* MainTabView.swift */; };
 		0D44673F26EC43B400B0D9F1 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44673E26EC43B400B0D9F1 /* Symbol.swift */; };
 		0D44674326EC451400B0D9F1 /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44674226EC451400B0D9F1 /* ResizedImage.swift */; };
 		0D44674526EC4A8B00B0D9F1 /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44674426EC4A8B00B0D9F1 /* ShrinkButtonStyle.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D13747E26EDB46D005AE2C3 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
+		0D13748026EDD369005AE2C3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		0D44673E26EC43B400B0D9F1 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		0D44674226EC451400B0D9F1 /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		0D44674426EC4A8B00B0D9F1 /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				0DBFFBD726DE1F2F00D5EFF8 /* Home */,
+				0D13748026EDD369005AE2C3 /* MainTabView.swift */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */,
 				0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */,
 				0D44674A26EC5CD000B0D9F1 /* OrderCompletedMessage.swift */,
+				0D13747E26EDB46D005AE2C3 /* FavoriteProductScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -342,6 +348,8 @@
 				0D44674B26EC5CD000B0D9F1 /* OrderCompletedMessage.swift in Sources */,
 				0DEFC9CF26E702E5000F73BE /* QuantitySelector.swift in Sources */,
 				0DEFC9D126E75E9E000F73BE /* FavoriteButton.swift in Sources */,
+				0D13748126EDD369005AE2C3 /* MainTabView.swift in Sources */,
+				0D13747F26EDB46D005AE2C3 /* FavoriteProductScrollView.swift in Sources */,
 				0DA133E126E45BF500FDBB9F /* BundleExtension.swift in Sources */,
 				0D44673F26EC43B400B0D9F1 /* Symbol.swift in Sources */,
 				0DA133EC26E4933300FDBB9F /* IdentifiableTest.swift in Sources */,
@@ -499,7 +507,7 @@
 				DEVELOPMENT_TEAM = KXX97XPPS5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "FruitMart/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +528,7 @@
 				DEVELOPMENT_TEAM = KXX97XPPS5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "FruitMart/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

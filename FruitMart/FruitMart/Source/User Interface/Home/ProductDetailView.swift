@@ -10,7 +10,7 @@ import SwiftUI
 struct ProductDetailView: View {
   @State private var quantity: Int = 1
   @State private var showingAlert: Bool = false
-  @State private var showingPopup: Bool = false
+  @State private var showingPopup: Bool = true  // default false
   @EnvironmentObject private var store: Store
   let product: Product
   
@@ -21,7 +21,7 @@ struct ProductDetailView: View {
     }
     // 팝업 크기 지정 및 dimmed 스타일 적용
 //    .modifier(Popup(size: CGSize(width: 200, height: 200), style: .dimmed, message: Text("팝업")))
-    .edgesIgnoringSafeArea(.top)
+    .edgesIgnoringSafeArea(.top)  // iOS 13.4 이상부터는 제외?
     .alert(isPresented: $showingAlert) { confirmAlert }
     // blur 스타일 적용
     .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
@@ -41,8 +41,9 @@ struct ProductDetailView: View {
         Spacer()
         self.priceInfo
         self.placeOrderButton
-      }.frame(height: $0.size.height + 10)
-      .padding(15)
+      }
+      .padding(32)
+      .frame(height: $0.size.height + 32)
       .background(Color.white)  // 다크모드에서도 흰색배경을 사용하기 위해 white 지정
       .cornerRadius(30)
       .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0.0, y: -5)

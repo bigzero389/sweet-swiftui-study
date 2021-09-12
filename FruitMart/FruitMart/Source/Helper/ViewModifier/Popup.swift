@@ -33,8 +33,8 @@ fileprivate struct Popup<Message: View>: ViewModifier {
       .blur(radius: style == .blur ? 2 : 0) // blur 스타일인 경우만 적용
       .overlay(Rectangle().fill(Color.black.opacity(style == .dimmed ? 0.4 : 0)))  // dimmed 스타일인 경우만 적용
       //TODO: 가운데 정렬이 안됨. github 샘플도 가운데 정렬이 안됨. 해결못함. 2021.09.11
-      .overlay(popupContent, alignment: .center)  // 팝업창으로 표현될 뷰
-    }
+      .overlay(popupContent)  // 팝업창으로 표현될 뷰
+  }
   
   private var popupContent: some View {
     GeometryReader {
