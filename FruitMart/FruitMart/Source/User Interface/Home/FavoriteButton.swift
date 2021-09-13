@@ -23,7 +23,9 @@ struct FavoriteButton: View {
       Symbol(product.isFavorite ? "heart.fill" : "heart", scale: .large, color: .peach)
         .frame(width: 32, height: 32, alignment: .center)
         .onTapGesture {
-          self.store.toggleFavorite(of: self.product)
+          withAnimation {
+            self.store.toggleFavorite(of: self.product)
+          }
         }
     }
   }

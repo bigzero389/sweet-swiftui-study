@@ -21,9 +21,11 @@ struct MainTabView: View {
       }
       .accentColor(.primary)
     }
-    .accentColor(.peach)
+//    .statusBar(hidden: selectedTab == .recipe)
     .edgesIgnoringSafeArea(.top)  // iOS 13.4 이상부터는 제외해야 함. 이하는 포함, 이유는 아직 모름
-  }  
+    .accentColor(.peach)
+    .statusBar(hidden: true)
+  }
 }
 
 private extension MainTabView {
@@ -35,7 +37,7 @@ private extension MainTabView {
   }
   
   var recipe: some View {
-    Text("레시피")
+    RecipeView()
       .tag(Tabs.recipe)
       .tabItem(image: "book", text: "레시피")
   }

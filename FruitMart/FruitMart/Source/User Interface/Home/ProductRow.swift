@@ -11,6 +11,7 @@ struct ProductRow: View {
   let product: Product
   @EnvironmentObject var store: Store
   @Binding var quickOrder: Product?
+  @State private var willAppear: Bool = false
   
   var body: some View {
     HStack {
@@ -26,6 +27,9 @@ struct ProductRow: View {
     // 3. 해당뷰에 shadow 수식어를 추가
     .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
     .padding(.vertical, 8)
+    .opacity(willAppear ? 1 : 0)
+    .animation(.easeInOut(duration: 0.4))
+    .onAppear { self.willAppear = true }
   }
 }
 

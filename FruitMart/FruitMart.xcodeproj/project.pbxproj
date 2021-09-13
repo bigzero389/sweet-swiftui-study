@@ -14,6 +14,11 @@
 		0D44674526EC4A8B00B0D9F1 /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44674426EC4A8B00B0D9F1 /* ShrinkButtonStyle.swift */; };
 		0D44674926EC4EBC00B0D9F1 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44674826EC4EBC00B0D9F1 /* Popup.swift */; };
 		0D44674B26EC5CD000B0D9F1 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44674A26EC5CD000B0D9F1 /* OrderCompletedMessage.swift */; };
+		0D59175326EF30C60062ACB7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59175226EF30C60062ACB7 /* Recipe.swift */; };
+		0D59175626EF316F0062ACB7 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59175526EF316F0062ACB7 /* RecipeView.swift */; };
+		0D59175826EF40890062ACB7 /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59175726EF40890062ACB7 /* Stripes.swift */; };
+		0D59175A26EF426C0062ACB7 /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59175926EF426C0062ACB7 /* ShapeClipModifier.swift */; };
+		0D59175C26EF480F0062ACB7 /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59175B26EF480F0062ACB7 /* AnyTransitionExtension.swift */; };
 		0D90727126E3121C0051BE79 /* OnTapGestureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727026E3121C0051BE79 /* OnTapGestureTest.swift */; };
 		0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727326E319060051BE79 /* NavigationViewTest.swift */; };
 		0D90727726E335CA0051BE79 /* ListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90727626E335CA0051BE79 /* ListTest.swift */; };
@@ -54,6 +59,11 @@
 		0D44674426EC4A8B00B0D9F1 /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
 		0D44674826EC4EBC00B0D9F1 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		0D44674A26EC5CD000B0D9F1 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
+		0D59175226EF30C60062ACB7 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		0D59175526EF316F0062ACB7 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		0D59175726EF40890062ACB7 /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
+		0D59175926EF426C0062ACB7 /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
+		0D59175B26EF480F0062ACB7 /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
 		0D90727026E3121C0051BE79 /* OnTapGestureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTapGestureTest.swift; sourceTree = "<group>"; };
 		0D90727326E319060051BE79 /* NavigationViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewTest.swift; sourceTree = "<group>"; };
 		0D90727626E335CA0051BE79 /* ListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTest.swift; sourceTree = "<group>"; };
@@ -111,8 +121,17 @@
 			isa = PBXGroup;
 			children = (
 				0D44674826EC4EBC00B0D9F1 /* Popup.swift */,
+				0D59175926EF426C0062ACB7 /* ShapeClipModifier.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		0D59175426EF313F0062ACB7 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				0D59175526EF316F0062ACB7 /* RecipeView.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 		0D90727226E3130C0051BE79 /* TestSample */ = {
@@ -141,6 +160,7 @@
 				0DA133E926E4843600FDBB9F /* Preview.swift */,
 				0D44673E26EC43B400B0D9F1 /* Symbol.swift */,
 				0D44674226EC451400B0D9F1 /* ResizedImage.swift */,
+				0D59175726EF40890062ACB7 /* Stripes.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -222,6 +242,7 @@
 		0DBFFBD026DE1EE100D5EFF8 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				0D59175426EF313F0062ACB7 /* Recipe */,
 				0DBFFBD726DE1F2F00D5EFF8 /* Home */,
 				0D13748026EDD369005AE2C3 /* MainTabView.swift */,
 			);
@@ -234,6 +255,7 @@
 				0DCAFE1C26E09DCA0088CD56 /* Product.swift */,
 				0DA133E226E45D6700FDBB9F /* Store.swift */,
 				0DEFC9D226E766F3000F73BE /* Order.swift */,
+				0D59175226EF30C60062ACB7 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,6 +290,7 @@
 			children = (
 				0DCAFE1A26E09A490088CD56 /* ColorExtension.swift */,
 				0DA133E026E45BF500FDBB9F /* BundleExtension.swift */,
+				0D59175B26EF480F0062ACB7 /* AnyTransitionExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -348,12 +371,15 @@
 				0D44674B26EC5CD000B0D9F1 /* OrderCompletedMessage.swift in Sources */,
 				0DEFC9CF26E702E5000F73BE /* QuantitySelector.swift in Sources */,
 				0DEFC9D126E75E9E000F73BE /* FavoriteButton.swift in Sources */,
+				0D59175326EF30C60062ACB7 /* Recipe.swift in Sources */,
 				0D13748126EDD369005AE2C3 /* MainTabView.swift in Sources */,
 				0D13747F26EDB46D005AE2C3 /* FavoriteProductScrollView.swift in Sources */,
 				0DA133E126E45BF500FDBB9F /* BundleExtension.swift in Sources */,
 				0D44673F26EC43B400B0D9F1 /* Symbol.swift in Sources */,
+				0D59175826EF40890062ACB7 /* Stripes.swift in Sources */,
 				0DA133EC26E4933300FDBB9F /* IdentifiableTest.swift in Sources */,
 				0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */,
+				0D59175C26EF480F0062ACB7 /* AnyTransitionExtension.swift in Sources */,
 				0DA133F426E4A54300FDBB9F /* PopoverTest.swift in Sources */,
 				0D90727126E3121C0051BE79 /* OnTapGestureTest.swift in Sources */,
 				0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */,
@@ -366,6 +392,7 @@
 				0DA133E326E45D6700FDBB9F /* Store.swift in Sources */,
 				0DA133F026E49BD100FDBB9F /* AlertTest.swift in Sources */,
 				0DA133E726E4799000FDBB9F /* MyStackTest.swift in Sources */,
+				0D59175626EF316F0062ACB7 /* RecipeView.swift in Sources */,
 				0D90727726E335CA0051BE79 /* ListTest.swift in Sources */,
 				0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */,
 				0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */,
@@ -373,6 +400,7 @@
 				0D44674326EC451400B0D9F1 /* ResizedImage.swift in Sources */,
 				0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */,
 				0DA133EE26E4985000FDBB9F /* StateBindingTest.swift in Sources */,
+				0D59175A26EF426C0062ACB7 /* ShapeClipModifier.swift in Sources */,
 				0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */,
 				0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */,
 				0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */,
@@ -507,7 +535,7 @@
 				DEVELOPMENT_TEAM = KXX97XPPS5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "FruitMart/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +556,7 @@
 				DEVELOPMENT_TEAM = KXX97XPPS5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "FruitMart/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

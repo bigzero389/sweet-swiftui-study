@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+  @EnvironmentObject private var store: Store
   @State private var quantity: Int = 1
   @State private var showingAlert: Bool = false
-  @State private var showingPopup: Bool = true  // default false
-  @EnvironmentObject private var store: Store
+  @State private var showingPopup: Bool = false  // default false
+  @State private var willAppear: Bool = false
   let product: Product
   
   var body: some View {
     VStack(spacing: 0) {
-      productImage
+      if willAppear {
+        productImage
+      }
       orderView
     }
     // 팝업 크기 지정 및 dimmed 스타일 적용
@@ -25,13 +28,21 @@ struct ProductDetailView: View {
     .alert(isPresented: $showingAlert) { confirmAlert }
     // blur 스타일 적용
     .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
+    .onAppear(perform: {
+      self.willAppear = true
+    })
   }
   
   var productImage: some View {
-    GeometryReader { _ in
+    let effect = AnyTransition.scale.combined(with: .opacity)
+      .animation(Animation.easeInOut(duration: 0.4).delay(0.05))
+    return GeometryReader { _ in
 //      Image(self.product.imageName).resizable().scaledToFill()
       ResizedImage(self.product.imageName)
     }
+    .transition(effect) // AnyTransition 관련버그로 effect 를 별도로 분리한 코드, 원래 아래처럼 해야 됨.
+//    .transition(AnyTransition.scale.combined(with: .opacity))
+//    .animation(Animation.easeInOut(duration: 0.4).delay(0.05))
   }
   
   var orderView: some View {

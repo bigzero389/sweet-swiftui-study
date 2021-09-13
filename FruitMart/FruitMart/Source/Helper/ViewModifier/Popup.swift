@@ -32,7 +32,6 @@ fileprivate struct Popup<Message: View>: ViewModifier {
     content
       .blur(radius: style == .blur ? 2 : 0) // blur 스타일인 경우만 적용
       .overlay(Rectangle().fill(Color.black.opacity(style == .dimmed ? 0.4 : 0)))  // dimmed 스타일인 경우만 적용
-      //TODO: 가운데 정렬이 안됨. github 샘플도 가운데 정렬이 안됨. 해결못함. 2021.09.11
       .overlay(popupContent)  // 팝업창으로 표현될 뷰
   }
   
@@ -46,6 +45,8 @@ fileprivate struct Popup<Message: View>: ViewModifier {
         .cornerRadius(12)
         .shadow(color: .primaryShadow, radius: 15, x: 5, y: 5)
         .overlay(self.checkCircleMark, alignment: .top)
+        //TODO: 가운데 정렬이 안됨 해결
+        .position(x: $0.size.width / 2, y: $0.size.height / 2)
     }
   }
   
