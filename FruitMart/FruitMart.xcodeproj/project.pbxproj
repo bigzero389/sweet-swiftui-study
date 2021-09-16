@@ -43,6 +43,9 @@
 		0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */; };
 		0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAFE1A26E09A490088CD56 /* ColorExtension.swift */; };
 		0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAFE1C26E09DCA0088CD56 /* Product.swift */; };
+		0DD246D026F1B6180050C480 /* GestureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD246CF26F1B6180050C480 /* GestureTest.swift */; };
+		0DD8580A26F2FDFE0012BB5E /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8580926F2FDFE0012BB5E /* FruitCard.swift */; };
+		0DD8580C26F2FFB20012BB5E /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8580B26F2FFB20012BB5E /* ImageGallery.swift */; };
 		0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8919026E34AD6003AE276 /* FrameTest.swift */; };
 		0DEFC9CF26E702E5000F73BE /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */; };
 		0DEFC9D126E75E9E000F73BE /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */; };
@@ -90,6 +93,9 @@
 		0DBFFBDE26DE34FF00D5EFF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = FruitMart/Source/Application/SceneDelegate.swift; sourceTree = SOURCE_ROOT; };
 		0DCAFE1A26E09A490088CD56 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0DCAFE1C26E09DCA0088CD56 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0DD246CF26F1B6180050C480 /* GestureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTest.swift; sourceTree = "<group>"; };
+		0DD8580926F2FDFE0012BB5E /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
+		0DD8580B26F2FFB20012BB5E /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 		0DD8919026E34AD6003AE276 /* FrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTest.swift; sourceTree = "<group>"; };
 		0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				0DA133F126E4A30000FDBB9F /* SheetTest.swift */,
 				0DA133F326E4A54300FDBB9F /* PopoverTest.swift */,
 				0DEFC9D426E772FB000F73BE /* WrapperTest.swift */,
+				0DD246CF26F1B6180050C480 /* GestureTest.swift */,
 			);
 			path = TestSample;
 			sourceTree = "<group>";
@@ -242,8 +249,9 @@
 		0DBFFBD026DE1EE100D5EFF8 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				0D59175426EF313F0062ACB7 /* Recipe */,
 				0DBFFBD726DE1F2F00D5EFF8 /* Home */,
+				0D59175426EF313F0062ACB7 /* Recipe */,
+				0DD8580826F2FDE70012BB5E /* ImageGallery */,
 				0D13748026EDD369005AE2C3 /* MainTabView.swift */,
 			);
 			path = "User Interface";
@@ -293,6 +301,15 @@
 				0D59175B26EF480F0062ACB7 /* AnyTransitionExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		0DD8580826F2FDE70012BB5E /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				0DD8580926F2FDFE0012BB5E /* FruitCard.swift */,
+				0DD8580B26F2FFB20012BB5E /* ImageGallery.swift */,
+			);
+			path = ImageGallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,8 +411,10 @@
 				0DA133E726E4799000FDBB9F /* MyStackTest.swift in Sources */,
 				0D59175626EF316F0062ACB7 /* RecipeView.swift in Sources */,
 				0D90727726E335CA0051BE79 /* ListTest.swift in Sources */,
+				0DD246D026F1B6180050C480 /* GestureTest.swift in Sources */,
 				0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */,
 				0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */,
+				0DD8580C26F2FFB20012BB5E /* ImageGallery.swift in Sources */,
 				0DA133E526E46AD400FDBB9F /* ProductDetailView.swift in Sources */,
 				0D44674326EC451400B0D9F1 /* ResizedImage.swift in Sources */,
 				0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */,
@@ -403,6 +422,7 @@
 				0D59175A26EF426C0062ACB7 /* ShapeClipModifier.swift in Sources */,
 				0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */,
 				0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */,
+				0DD8580A26F2FDFE0012BB5E /* FruitCard.swift in Sources */,
 				0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

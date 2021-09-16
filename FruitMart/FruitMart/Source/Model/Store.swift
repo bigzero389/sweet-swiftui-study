@@ -15,18 +15,21 @@ final class Store: ObservableObject {
     self.products = Bundle.main.decode(filename: filename, as: [Product].self)
   }
   
-  func placeOrder(product: Product, quantity: Int) {
-    let nextID = Order.orderSequence.next()!
-    let order = Order(id: nextID, product: product, quantity: quantity)
-    orders.append(order)
-    print(orders) // property 확인.
-  }
 }
+
+// MARK: - Action
 extension Store {
   func toggleFavorite(of product: Product) {
     guard let index = products.firstIndex(of: product) else {
       return
     }
     products[index].isFavorite.toggle()
+  }
+  
+  func placeOrder(product: Product, quantity: Int) {
+    let nextID = Order.orderSequence.next()!
+    let order = Order(id: nextID, product: product, quantity: quantity)
+    orders.append(order)
+    print(orders) // property 확인.
   }
 }

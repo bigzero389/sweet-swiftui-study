@@ -20,11 +20,11 @@ struct MainTabView: View {
         myPage
       }
       .accentColor(.primary)
+      .statusBar(hidden: selectedTab == Tabs.recipe)  // TabView 안쪽에 넣어야 hidden 됨. 책과다름.
     }
 //    .statusBar(hidden: selectedTab == .recipe)
     .edgesIgnoringSafeArea(.top)  // iOS 13.4 이상부터는 제외해야 함. 이하는 포함, 이유는 아직 모름
     .accentColor(.peach)
-    .statusBar(hidden: true)
   }
 }
 
@@ -43,7 +43,7 @@ private extension MainTabView {
   }
   
   var imageGallery: some View {
-    Text("이미지 갤러리")
+    ImageGallery()
       .tag(Tabs.gallery)
       .tabItem(image: "photo.on.rectangle", text: "갤러리")
   }

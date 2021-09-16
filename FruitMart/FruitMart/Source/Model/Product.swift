@@ -9,7 +9,6 @@ import Foundation
 struct Product {
   // var 로 선언했더니 JSON 복호화시 에러가 발생한다. 원인불명
   let id: UUID = UUID() // identifiable 프로토콜 준수를 위한 id 프로퍼티 추가
-  
   let name: String
   let imageName: String
   let price: Int
