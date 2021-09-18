@@ -49,16 +49,16 @@ struct Home: View {
           }
           .frame(width: 0).hidden()
         }
-        .listRowBackground(Color.background)
+//        .listRowBackground(Color.background)
       }
-      .listRowInsets(EdgeInsets())  // list separator 제거 추가. iOS 14
-      .background(Color.background)
+      .listRowInsets(EdgeInsets())
+//      .background(Color.background)
     }
     .navigationBarTitle(Text("과일마트"), displayMode: .inline)
   }
   
   var showFavorite: Bool {
-    !store.products.filter({$0.isFavorite}).isEmpty
+    !store.products.filter({$0.isFavorite}).isEmpty && store.appSetting.showFavoriteList
   }
   
   func popupMessage(product: Product) -> some View {
@@ -77,6 +77,8 @@ struct Home_Previews: PreviewProvider {
   static var previews: some View {
 //    Home(store: Store())
     Preview(source: Home().environmentObject(Store()))
+    Preview(source: Home().environmentObject(Store()))
+      .preferredColorScheme(.dark)
   }
 }
 

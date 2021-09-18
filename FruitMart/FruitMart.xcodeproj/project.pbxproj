@@ -46,12 +46,17 @@
 		0DD246D026F1B6180050C480 /* GestureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD246CF26F1B6180050C480 /* GestureTest.swift */; };
 		0DD8580A26F2FDFE0012BB5E /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8580926F2FDFE0012BB5E /* FruitCard.swift */; };
 		0DD8580C26F2FFB20012BB5E /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8580B26F2FFB20012BB5E /* ImageGallery.swift */; };
+		0DD8580E26F31EA90012BB5E /* FormTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8580D26F31EA90012BB5E /* FormTest.swift */; };
+		0DD8581126F3227E0012BB5E /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8581026F3227E0012BB5E /* MyPage.swift */; };
+		0DD8581326F324AF0012BB5E /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8581226F324AF0012BB5E /* OrderListView.swift */; };
+		0DD8581526F326290012BB5E /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8581426F326290012BB5E /* OrderRow.swift */; };
 		0DD8919126E34AD6003AE276 /* FrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8919026E34AD6003AE276 /* FrameTest.swift */; };
 		0DEFC9CF26E702E5000F73BE /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */; };
 		0DEFC9D126E75E9E000F73BE /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */; };
 		0DEFC9D326E766F3000F73BE /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D226E766F3000F73BE /* Order.swift */; };
 		0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D426E772FB000F73BE /* WrapperTest.swift */; };
 		0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4869726E306C20016DCA5 /* ButtonTest.swift */; };
+		0DFC3F2626F5873B00730B7F /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC3F2526F5873B00730B7F /* AppSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,12 +101,17 @@
 		0DD246CF26F1B6180050C480 /* GestureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTest.swift; sourceTree = "<group>"; };
 		0DD8580926F2FDFE0012BB5E /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
 		0DD8580B26F2FFB20012BB5E /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
+		0DD8580D26F31EA90012BB5E /* FormTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTest.swift; sourceTree = "<group>"; };
+		0DD8581026F3227E0012BB5E /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
+		0DD8581226F324AF0012BB5E /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		0DD8581426F326290012BB5E /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 		0DD8919026E34AD6003AE276 /* FrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTest.swift; sourceTree = "<group>"; };
 		0DEFC9CE26E702E5000F73BE /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		0DEFC9D026E75E9E000F73BE /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		0DEFC9D226E766F3000F73BE /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0DEFC9D426E772FB000F73BE /* WrapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperTest.swift; sourceTree = "<group>"; };
 		0DF4869726E306C20016DCA5 /* ButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTest.swift; sourceTree = "<group>"; };
+		0DFC3F2526F5873B00730B7F /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +167,7 @@
 				0DA133F326E4A54300FDBB9F /* PopoverTest.swift */,
 				0DEFC9D426E772FB000F73BE /* WrapperTest.swift */,
 				0DD246CF26F1B6180050C480 /* GestureTest.swift */,
+				0DD8580D26F31EA90012BB5E /* FormTest.swift */,
 			);
 			path = TestSample;
 			sourceTree = "<group>";
@@ -252,6 +263,7 @@
 				0DBFFBD726DE1F2F00D5EFF8 /* Home */,
 				0D59175426EF313F0062ACB7 /* Recipe */,
 				0DD8580826F2FDE70012BB5E /* ImageGallery */,
+				0DD8580F26F322690012BB5E /* MyPage */,
 				0D13748026EDD369005AE2C3 /* MainTabView.swift */,
 			);
 			path = "User Interface";
@@ -264,6 +276,7 @@
 				0DA133E226E45D6700FDBB9F /* Store.swift */,
 				0DEFC9D226E766F3000F73BE /* Order.swift */,
 				0D59175226EF30C60062ACB7 /* Recipe.swift */,
+				0DFC3F2526F5873B00730B7F /* AppSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +323,16 @@
 				0DD8580B26F2FFB20012BB5E /* ImageGallery.swift */,
 			);
 			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		0DD8580F26F322690012BB5E /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				0DD8581026F3227E0012BB5E /* MyPage.swift */,
+				0DD8581226F324AF0012BB5E /* OrderListView.swift */,
+				0DD8581426F326290012BB5E /* OrderRow.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,8 +419,10 @@
 				0D59175826EF40890062ACB7 /* Stripes.swift in Sources */,
 				0DA133EC26E4933300FDBB9F /* IdentifiableTest.swift in Sources */,
 				0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */,
+				0DD8581326F324AF0012BB5E /* OrderListView.swift in Sources */,
 				0D59175C26EF480F0062ACB7 /* AnyTransitionExtension.swift in Sources */,
 				0DA133F426E4A54300FDBB9F /* PopoverTest.swift in Sources */,
+				0DD8580E26F31EA90012BB5E /* FormTest.swift in Sources */,
 				0D90727126E3121C0051BE79 /* OnTapGestureTest.swift in Sources */,
 				0D90727426E319060051BE79 /* NavigationViewTest.swift in Sources */,
 				0DA133F226E4A30000FDBB9F /* SheetTest.swift in Sources */,
@@ -411,9 +436,11 @@
 				0DA133E726E4799000FDBB9F /* MyStackTest.swift in Sources */,
 				0D59175626EF316F0062ACB7 /* RecipeView.swift in Sources */,
 				0D90727726E335CA0051BE79 /* ListTest.swift in Sources */,
+				0DFC3F2626F5873B00730B7F /* AppSetting.swift in Sources */,
 				0DD246D026F1B6180050C480 /* GestureTest.swift in Sources */,
 				0DBFFBDF26DE34FF00D5EFF8 /* SceneDelegate.swift in Sources */,
 				0DCAFE1B26E09A490088CD56 /* ColorExtension.swift in Sources */,
+				0DD8581126F3227E0012BB5E /* MyPage.swift in Sources */,
 				0DD8580C26F2FFB20012BB5E /* ImageGallery.swift in Sources */,
 				0DA133E526E46AD400FDBB9F /* ProductDetailView.swift in Sources */,
 				0D44674326EC451400B0D9F1 /* ResizedImage.swift in Sources */,
@@ -422,6 +449,7 @@
 				0D59175A26EF426C0062ACB7 /* ShapeClipModifier.swift in Sources */,
 				0DCAFE1D26E09DCA0088CD56 /* Product.swift in Sources */,
 				0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */,
+				0DD8581526F326290012BB5E /* OrderRow.swift in Sources */,
 				0DD8580A26F2FDFE0012BB5E /* FruitCard.swift in Sources */,
 				0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */,
 			);

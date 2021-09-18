@@ -18,14 +18,14 @@ struct ProductRow: View {
       productImage
       productDescription
     }
-    .frame(height: 150) // 뷰전체 높이 150 지정
+    .frame(height: store.appSetting.productRowHeight) // 뷰전체 높이 default 150
     .background(Color.primary.colorInvert())  //colorInvert() 는 View를 리턴한다.
     .cornerRadius(6)
+    .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
     // 뷰 가장자리에만 그림자효과를 넣으려면
     // 1. 뷰의 배경색을 불투명한 색으로 지정
     // 2. 이미 작성한 수식어들의 효과를 먼저 반영
     // 3. 해당뷰에 shadow 수식어를 추가
-    .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
     .padding(.vertical, 8)
     .opacity(willAppear ? 1 : 0)
     .animation(.easeInOut(duration: 0.4))
@@ -98,11 +98,12 @@ private extension ProductRow {
 // MARK - Preview
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-      Group {
-        ForEach(productSamples) {
-          ProductRow(product: $0, quickOrder: .constant(nil))
-        }
-        ProductRow(product: productSamples[0], quickOrder: .constant(nil))
+      Group {        
+//        ForEach(productSamples) {
+//          Preview(source: ProductRow(product: $0, quickOrder: .constant(nil)).environmentObject(Store()))
+//        }
+        // single sample preview
+        Preview(source: ProductRow(product: productSamples[0], quickOrder: .constant(nil)).environmentObject(Store()))
           .preferredColorScheme(.dark)
       }.padding()
       .previewLayout(.sizeThatFits)

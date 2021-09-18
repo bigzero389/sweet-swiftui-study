@@ -33,7 +33,7 @@ private extension MainTabView {
     Home()
       .tag(Tabs.home)
       .tabItem(image: "house", text: "홈")
-//      .onAppear { UITableView.appearance().separatorStyle = .none } // iOS 14 부터 안된다고함.
+//      .onAppear { UITableView.appearance().separatorStyle = .singleLine } // iOS 14 부터 안된다고함.
   }
   
   var recipe: some View {
@@ -49,7 +49,7 @@ private extension MainTabView {
   }
   
   var myPage: some View {
-    Text("마이페이지")
+    MyPage()
       .tag(Tabs.myPage)
       .tabItem(image: "person", text: "마이페이지")
   }
