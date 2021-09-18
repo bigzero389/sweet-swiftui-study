@@ -9,17 +9,27 @@ import SwiftUI
 
 struct MyPage: View {
   @EnvironmentObject var store: Store // 앱 설정에 접근하기 위해 추가
+  @State private var pickedImage: Image = Image(systemName: "person.crop.circle")
+  @State private var nickname: String = ""
+  @State private var isPickerPresented: Bool = false
+  
   private let pickerDataSource: [CGFloat] = [140, 150, 160]
   
   var body: some View {
     NavigationView {
-      Form {
-        orderInfoSection
-        appSettingSection
-        productHeightPicker
+      VStack {
+        userInfo
+        Form {
+          orderInfoSection
+          appSettingSection
+          productHeightPicker
+        }
       }
       .navigationBarTitle("마이페이지")
     }
+    .sheet(isPresented: $isPickerPresented, content: {
+      ImagePickerView(pickedImage: self.$pickedImage)
+    })
   }
   
   var orderInfoSection: some View {
@@ -50,6 +60,41 @@ struct MyPage: View {
       .pickerStyle(SegmentedPickerStyle())
     }
     .frame(height: 72)
+  }
+  
+  var userInfo: some View {
+    VStack {
+      profileImage
+      nicknameTextField
+    }
+    .frame(maxWidth: .infinity, minHeight: 200)
+    .background(Color.background)
+  }
+  
+  var profileImage: some View {
+    pickedImage
+      .resizable().scaledToFill()
+      .clipShape(Circle())
+      .frame(width: 100, height: 100)
+      .overlay(pickImageButton.offset(x: 8, y: 0), alignment: .bottomTrailing)
+  }
+  
+  var pickImageButton: some View {
+    Button(action: { self.isPickerPresented = true }, label: {
+      Circle()
+        .fill(Color.white)
+        .frame(width: 32, height: 32)
+        .shadow(color: .primary, radius: 2, x: 2, y: 2)
+        .overlay(Image("pencil").foregroundColor(.black))
+    })
+  }
+  
+  var nicknameTextField: some View {
+    TextField("닉네임", text: $nickname)
+      .font(.system(size: 25, weight: .medium))
+      .textContentType(.nickname)
+      .multilineTextAlignment(.center)
+      .autocapitalization(.none)
   }
 }
 

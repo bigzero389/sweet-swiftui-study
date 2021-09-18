@@ -57,6 +57,7 @@
 		0DEFC9D526E772FB000F73BE /* WrapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEFC9D426E772FB000F73BE /* WrapperTest.swift */; };
 		0DF4869826E306C20016DCA5 /* ButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4869726E306C20016DCA5 /* ButtonTest.swift */; };
 		0DFC3F2626F5873B00730B7F /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC3F2526F5873B00730B7F /* AppSetting.swift */; };
+		0DFC3F2826F595CB00730B7F /* ImagePicckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC3F2726F595CB00730B7F /* ImagePicckerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		0DEFC9D426E772FB000F73BE /* WrapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperTest.swift; sourceTree = "<group>"; };
 		0DF4869726E306C20016DCA5 /* ButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTest.swift; sourceTree = "<group>"; };
 		0DFC3F2526F5873B00730B7F /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		0DFC3F2726F595CB00730B7F /* ImagePicckerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicckerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 				0DD8581026F3227E0012BB5E /* MyPage.swift */,
 				0DD8581226F324AF0012BB5E /* OrderListView.swift */,
 				0DD8581426F326290012BB5E /* OrderRow.swift */,
+				0DFC3F2726F595CB00730B7F /* ImagePicckerView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				0DA133E126E45BF500FDBB9F /* BundleExtension.swift in Sources */,
 				0D44673F26EC43B400B0D9F1 /* Symbol.swift in Sources */,
 				0D59175826EF40890062ACB7 /* Stripes.swift in Sources */,
+				0DFC3F2826F595CB00730B7F /* ImagePicckerView.swift in Sources */,
 				0DA133EC26E4933300FDBB9F /* IdentifiableTest.swift in Sources */,
 				0DBFFBDB26DE345900D5EFF8 /* ProductRow.swift in Sources */,
 				0DD8581326F324AF0012BB5E /* OrderListView.swift in Sources */,
